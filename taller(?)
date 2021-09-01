@@ -1,0 +1,67 @@
+import  java.util.Scanner ;
+
+
+public class Taller01Sismos {
+    public static void main(String[] args) {
+
+        out1 :
+        while ( true ) {
+
+            menu();
+            System.out.println("Elija una opcion : ");
+            Scanner sc = new Scanner(System.in);
+            String opcion = sc.next();
+            switch (opcion) {
+                case "1":
+                    llenarArreglo();
+
+                    break;
+                case "2":
+                    buscarMayorSismo();
+
+                    break;
+                case "3":
+
+
+                case "4":
+
+
+                case "5":
+                    System.out.println("Ciao");
+                    break out1;
+            }
+
+            }
+        }
+
+    public static void menu() {
+        System.out.println("----------Menu--------");
+        System.out.println("[1] Llenar arreglo");
+        System.out.println("[2] Mostrar sismo de mayor magnitud");
+        System.out.println("[3] Contar sismos mayores o iguales a 5.0");
+        System.out.println("[4] Enviar SMS por cada sismo mayor o igual a 7.0");
+        System.out.println("[5] Salir");
+
+    }
+
+
+
+    public static void llenarArreglo(){
+
+        int A[]=new int[10];
+
+        for(int i=0 ;i<10;i++){
+
+            A[i]=(int)(Math.random()*10);
+
+            System.out.println("Sismo"+i+"--->"+(double)A[i]);
+
+        }
+    }
+
+    public static void buscarMayorSismo(){
+
+        System.out.println("numero mayor");
+
+        }
+}
